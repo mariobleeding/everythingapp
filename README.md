@@ -44,3 +44,5 @@ To run the app locally, follow these steps:
 ## Discord PR
 
 If you would like to collaborate or have any suggestions, feel free to contact me on Discord: @mariobleeding#9404
+
+![Screenshot from 2023-05-24 17-03-27](https://github.com/mariobleeding/everythingapp/assets/133920597/87cd485e-06e5-43ed-9f93-8c6778585409)
