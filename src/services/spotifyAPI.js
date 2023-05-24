@@ -1,8 +1,9 @@
 import axios from "axios";
+import variables from "./variables.js";
 
 // Spotify
-const CLIENT_ID = "b4f0f96a82f34969bdafe678aefecffb";
-const CLIENT_SECRET = "2153f790239d40de971476cc3f35a8e9";
+const CLIENT_ID = variables.SPOTIFY_CLIENT_ID;
+const CLIENT_SECRET = variables.SPOTIFY_CLIENT_SECRET;
 
 const getAccessToken = async () => {
   try {

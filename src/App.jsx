@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import { NewsGrid } from "./components/NewsGrid";
+import { PostsGrid } from "./components/PostsGrid";
 import { ReleasesGrid } from "./components/ReleasesGrid";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
       <section className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-1 m-2">
         <NewsGrid />
         <ReleasesGrid />
+        <PostsGrid />
       </section>
     </div>
   );

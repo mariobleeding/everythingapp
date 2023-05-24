@@ -7,7 +7,6 @@ export const ReleasesGrid = () => {
 
   useEffect(() => {
     spotifyAPI.getNewReleases().then((data) => {
-      console.log(data);
       setNewreleases(data);
     });
   }, []);

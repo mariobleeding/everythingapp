@@ -5,6 +5,8 @@ import { NewParameterSelector } from "./NewParameterSelector";
 
 import newsAPI from "../services/newsAPI";
 
+import { v4 as uuidv4 } from "uuid";
+
 export const NewsGrid = () => {
   const [news, setNews] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState("us");
@@ -34,7 +36,7 @@ export const NewsGrid = () => {
         onChangeCategory={handleCategoryChange}
       />
       {news.map((el) => (
-        <NewItem newItem={el} key={el.id} />
+        <NewItem newItem={el} key={uuidv4()} />
       ))}
     </div>
   );
