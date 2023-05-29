@@ -34,7 +34,7 @@ const getNewReleases = async () => {
     const token = await getAccessToken();
     const requestOptions = {
       method: "get",
-      url: "https://api.spotify.com/v1/browse/new-releases",
+      url: "https://api.spotify.com/v1/browse/new-releases?country=US",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

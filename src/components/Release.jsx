@@ -1,6 +1,6 @@
 export const Release = ({ newRelease }) => {
   return (
-    <article className="p-1 rounded-lg m-1 w-full flex shadow-md hover:bg-gray-50 cursor-pointer">
+    <article className="p-1 rounded-lg m-1 w-full flex shadow-md hover:shadow-lg hover:bg-gray-50 cursor-pointer">
       <img
         src={newRelease.images[1].url}
         alt="image-not-working"

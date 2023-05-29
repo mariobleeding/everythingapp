@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { PostItemInfo } from "./PostItemInfo";
 
 export const PostItem = ({ postItem }) => {
   const [isShow, setIsShow] = useState(false);
@@ -8,7 +9,7 @@ export const PostItem = ({ postItem }) => {
   };
 
   return (
-    <article className="p-1 rounded-lg m-1 w-full items-center flex shadow-md hover:bg-gray-50 flex flex-col">
+    <article className="rounded-lg p-1 m-2 items-center flex shadow-md hover:bg-gray-50 hover:shadow-lg flex-col">
       <div
         className="flex justify-between w-full items-center cursor-pointer"
         onClick={toggleImage}
@@ -16,13 +17,7 @@ export const PostItem = ({ postItem }) => {
         <h1 className="text-sm p-5">{postItem.title}</h1>{" "}
         <i className="fa-solid fa-angle-down text-right px-3 text-lg"></i>
       </div>
-      {isShow && postItem.url && (
-        <img
-          src={postItem.url}
-          alt="image-not-working"
-          className="w-full p-3"
-        />
-      )}
+      {isShow && <PostItemInfo item={postItem} />}
     </article>
   );
 };

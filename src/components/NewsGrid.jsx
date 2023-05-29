@@ -27,7 +27,7 @@ export const NewsGrid = () => {
   };
 
   return (
-    <div className="p-1">
+    <div className="p-1 col-span-2">
       <h1 className="text-xl p-1 py-3 font-title">
         <i className="fa-regular fa-newspaper font-md pr-2"></i>news
       </h1>
@@ -35,9 +35,11 @@ export const NewsGrid = () => {
         onChangeCountry={handleCountryChange}
         onChangeCategory={handleCategoryChange}
       />
-      {news.map((el) => (
-        <NewItem newItem={el} key={uuidv4()} />
-      ))}
+      <div className="h-[75vh] overflow-y-scroll overflow-x-hidden">
+        {news.map((el) => (
+          <NewItem newItem={el} key={uuidv4()} />
+        ))}
+      </div>
     </div>
   );
 };

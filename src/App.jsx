@@ -5,12 +5,12 @@ import { ReleasesGrid } from "./components/ReleasesGrid";
 
 const App = () => {
   return (
-    <div className="font-normal">
+    <div className="font-normal h-screen">
       <Header />
-      <section className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-1 m-2">
+      <section className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-1 mx-2">
         <NewsGrid />
-        <ReleasesGrid />
         <PostsGrid />
+        <ReleasesGrid />
       </section>
     </div>
   );

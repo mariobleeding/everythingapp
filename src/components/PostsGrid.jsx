@@ -14,9 +14,9 @@ export const PostsGrid = () => {
   }, [readySubreddit]);
 
   return (
-    <div className="p-1">
+    <div className="p-1 col-span-2">
       <h1 className="text-xl p-1 py-3 font-title">
-        <i className="fa-regular fa-newspaper font-md pr-2"></i>reddit posts
+        <i className="fa-brands fa-square-reddit font-md pr-2"></i>reddit posts
       </h1>
       <input
         type="text"
@@ -30,9 +30,11 @@ export const PostsGrid = () => {
           }
         }}
       />
-      {posts.map((el) => (
-        <PostItem postItem={el} key={el.id} />
-      ))}
+      <div className="h-[75vh] overflow-y-scroll overflow-x-hidden">
+        {posts.map((el) => (
+          <PostItem postItem={el} key={el.id} />
+        ))}
+      </div>
     </div>
   );
 };

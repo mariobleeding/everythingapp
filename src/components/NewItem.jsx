@@ -1,11 +1,11 @@
 export const NewItem = ({ newItem }) => {
   return (
-    <article className="p-1 rounded-lg m-1 w-full flex justify-center items-center shadow-md hover:bg-gray-50 cursor-pointer">
+    <article className="p-1 rounded-lg m-1 w-full flex justify-center items-center shadow-md hover:shadow-lg hover:bg-gray-50 cursor-pointer">
       {newItem.urlToImage && (
         <img
           src={newItem.urlToImage}
           alt="image-not-working"
-          className="rounded-full h-20 w-20 object-cover"
+          className="h-16 w-16 object-cover"
         />
       )}
       <h1 className="text-sm p-5">
