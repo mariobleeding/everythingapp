@@ -9,7 +9,6 @@ const App = () => {
       <Header />
       <section className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-1 mx-2">
         <NewsGrid />
-        <PostsGrid />
         <ReleasesGrid />
       </section>
     </div>
